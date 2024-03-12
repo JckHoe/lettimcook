@@ -68,3 +68,15 @@ Install neovim binary the same.
 ```
 brew install ripgrep
 ```
+
+### Oh-My-Zsh custom theme (Fixing execution time)
+Update the command that calculates the execution time with this function
+```
+precmd() {
+    if [ -n "$_ZSH_CMD_DURATION_START" ]; then
+        _ZSH_CMD_DURATION_END=$(gdate +%s.%3N)
+        _ZSH_CMD_DURATION=$(awk "BEGIN {printf \"%.3f\", ${_ZSH_CMD_DURATION_END} - ${_ZSH_CMD_DURATION_START}}")
+        unset _ZSH_CMD_DURATION_START
+    fi
+}
+```
