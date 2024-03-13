@@ -80,3 +80,9 @@ precmd() {
     fi
 }
 ```
+
+### Installing Kitty for the terminal
+Why kitty? because it can remap mac's `option` key to `alt` easier.
+```
+brew install --cask kitty
+```
