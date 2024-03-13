@@ -86,3 +86,9 @@ Why kitty? because it can remap mac's `option` key to `alt` easier.
 ```
 brew install --cask kitty
 ```
+
+#### Configuring kitty for alt key for neovim keybinds
+In `~/.config/kitty/kitty.conf` find the config below and update it to `yes`
+```
+macos_option_as_alt yes
+```
