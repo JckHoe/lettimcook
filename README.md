@@ -92,3 +92,21 @@ In `~/.config/kitty/kitty.conf` find the config below and update it to `yes`
 ```
 macos_option_as_alt yes
 ```
+
+### Running old architecture stuff
+Its possible to use older build tools without binaries for apple silicon. 
+
+#### Install rosetta
+Not the pokemon...
+```
+/usr/sbin/softwareupdate --install-rosetta --agree-to-license
+```
+
+#### After this follow below steps
+1* Go to finder
+2* Go to `Utilities`
+3* Right click `Terminal`
+4* Select the option to open terminal with rosetta
+
+#### Using it 
+After this just open terminal, and it should be able to run any old cpu architecture binaries, at the cost of performance so should NOT be used for benchmarks
