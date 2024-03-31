@@ -110,3 +110,18 @@ Not the pokemon...
 
 #### Using it 
 After this just open terminal, and it should be able to run any old cpu architecture binaries, at the cost of performance so should NOT be used for benchmarks
+
+### To set docker buildx in macos
+#### Install via homebrew
+```
+brew install docker-buildx
+```
+#### Set the link to the plugin
+```
+mkdir ~/.docker/cli-plugins
+ln -sfn $(which docker-buildx) ~/.docker/cli-plugins/docker-buildx
+```
+#### Set the docker_host to colima if using colima
+```
+export DOCKER_HOST="unix://$HOME/.colima/docker.sock"
+```
