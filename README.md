@@ -70,6 +70,11 @@ brew install ripgrep
 ```
 
 ### Oh-My-Zsh custom theme (Fixing execution time)
+#### Ensure that coreutils is installed
+```
+brew install coreutils
+```
+#### Update script
 Update the command that calculates the execution time with this function
 ```
 precmd() {
